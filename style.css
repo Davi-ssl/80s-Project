@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'font1';
+    src: url(fonts/logo-name/WendyOne-Regular.ttf);
+}
+
+@font-face {
+    font-family:  'font2';
+    src: url(fonts/textos-historia/MuseoModerno-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'font3';
+    src: url(fonts/textos-historia/CarroisGothicSC-Regular.ttf); 
+}
+
+@font-face {
+    font-family: 'font4';
+    src: url(fonts/textos-historia/Balthazar-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'font5';
+    src: url(fonts/menu-titulos/RadiumFG-r.TTF);
+}
+
+:root {
+    --font1: 'font1';
+    --font2: 'font2';
+    --font3: 'font3';
+    --font4: 'font4';
+    --font5: 'font5';
+
+    --cor1: #0B0033;
+    --cor2: #7A00FF;
+    --cor3: #FF00A8;
+    --cor4: #00FFF7;
+    --cor5: #FFD600;
+    --cor6: #F5F5F5;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: rgba(0, 0, 0, 0.733) url(https://cdn.pixabay.com/photo/2013/12/09/03/52/aurora-225449_1280.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header {
+    background: rgba(0, 0, 1, 0.815) url(https://images.pexels.com/photos/774448/pexels-photo-774448.jpeg);
+    background-blend-mode: darken;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: repeat;
+    min-height: 160px;
+    overflow: hidden;
+    border-bottom: 3px solid var(--cor3);
+    box-shadow: 1px 2px 10px var(--cor3);
+    position: sticky;
+    width: 100%;
+    top: -120px;
+}
+
+header>h1 {
+    font-family: var(--font1);
+    color: var(--cor3);
+    text-shadow: 1px 1px 5px var(--cor6);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 60px;
+}
+   
+
+nav {
+    text-align: center;
+    font-family: var(--font2);
+    margin-top: 40px;
+}
+
+nav>a {
+    margin-left: 5px;
+    margin-right: 5px;
+    color: var(--cor6);
+    text-decoration-color: var(--cor6);
+    padding: 5px;
+    text-shadow: 0px 0px 2px var(--cor6);
+    text-decoration: none;
+}
+
+nav>a:hover {
+    background-color: var(--cor6);
+    border-radius: 5px;
+    transition: 0.5s;
+    color: var(--cor3);
+    box-shadow: 0px 0px 5px white;
+    text-decoration: underline;
+    text-shadow: 0px 0px 5px var(--cor3);
+}
+
+main {
+    margin: auto;
+    max-width: 95vw;
+}
+
+#one {
+    text-align: center;
+    border-radius: 5px;
+    max-width: 95vw;
+    margin: auto;
+    margin-top: 20px;
+    border-style: double;
+    border-color: var(--cor2);
+    box-shadow: 0px 0px 15px var(--cor2);
+    background-image: linear-gradient(90deg, var(--cor1), var(--cor2));
+}
+
+#one>h2 {
+    color: var(--cor5);
+    font-family: var(--font3);
+    font-size: 1.9em;
+    text-shadow: 0px 0px 3px var(--cor5);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#one>p {
+    font-family: var(--font4);
+    color: var(--cor6);
+    font-size: 1.4em;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.content {
+    color: var(--cor5);
+    border-radius: 5px;
+    border-style: double;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: linear-gradient(90deg, var(--cor3), var(--cor5));
+    box-shadow: 0px 0px 12px var(--cor5);
+
+}
+
+h3 {
+    color: var(--cor6);
+    font-family: var(--font5);
+    font-size: 1.5em;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.664);
+    margin-bottom: 15px;
+}
+
+
+.content p {
+    color: var(--cor6);
+    font-size: 1.3em;
+    margin-top: 10px;
+    font-family: var(--font3);
+    font-weight: 500;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452);
+}
+
+
+img {
+ max-width: 100%;
+}
+
+#container {
+    display: flex;
+    gap: 15px;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px ) {
+      header {
+        top: -180px;
+
+    }
+  
+
+    #container { 
+        flex-direction: column
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #F5F5F5;
+    font-family: var(--font4);
+    text-align: center;
+    
+}
+
+
